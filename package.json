@@ -1,0 +1,45 @@
+{
+  "name": "restaurant_order_app",
+  "version": "1.0.0",
+  "description": "This app will allow users to place food orders online",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "build": "npm install && node app.js",
+    "start": "npm run build",
+    "build-client": "cd client && npm install && npm run build",
+    "install-server": "cd server && npm install",
+    "seed": "node server/seeds/index.js"
+  },
+  "engines": {
+    "node": ">= 6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwoods447/online_restauraunt.git"
+  },
+  "author": "Demaria Woods - Full Stack Developer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dwoods447/online_restauraunt/issues"
+  },
+  "homepage": "https://github.com/dwoods447/online_restauraunt#readme",
+  "cacheDirectories": [
+    "client/node_modules",
+    "server/node_modules"
+  ],
+  "dependencies": {
+    "axios": "^1.4.0",
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.0",
+    "express": "^4.18.2",
+    "mysql": "~2.5.0",
+    "mysql2": "^3.3.2",
+    "node-fetch": "^3.3.1",
+    "nodemon": "^2.0.22",
+    "sequelize": "^5.22.3"
+  }
+}
