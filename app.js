@@ -35,9 +35,6 @@ app.use('/addons', addons);
 app.use('/orders', orders);
 
 try {
-    // mongoConnect(() =>{
-    //      app.listen(process.env.PORT || port, ()=> console.log(`Application started on PORT ${port}.\r\n\r\n`));
-    // })
     sequelize.sync().then(() =>{
         console.log(`Connection Successfull.....\r\n\r\n`);
         app.listen(process.env.PORT || port, ()=> console.log(`Application started on PORT ${port}.\r\n\r\n`));
